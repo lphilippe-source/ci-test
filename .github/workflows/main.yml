@@ -12,6 +12,8 @@ jobs:
       - run: ls -la 
       - name: recup du code
         uses: actions/checkout@v3.5.2
+      - name: build
+        run: npm install
       - name: test
         run: npm run test
   
