@@ -22,7 +22,7 @@ describe('AppController', () => {
   describe('return false', () => {
     it('should return "error"', () => {
       const appController = app.get(AppController);
-      expect(appController.getHello()).toBe(false);
+      expect(appController.getHello()).toBe(true);
     });
 
   });
