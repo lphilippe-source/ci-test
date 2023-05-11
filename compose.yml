@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  api:
+    working_dir: /app
+    image: node:lts-alpine3.17
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+    command: sh -c "npm run start"
+
