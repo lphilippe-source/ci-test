@@ -9,6 +9,9 @@ jobs:
     steps:
       - name: toto
         run: echo "Hello World"
+      - run: ls -la 
+      - name: recup du code
+        uses: actions/checkout@v3.5.2
   
   
     
